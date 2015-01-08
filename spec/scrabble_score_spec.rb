@@ -14,4 +14,9 @@ describe 'String#scrabble_score' do
   it "returns the correct value for any word given" do
     expect("adbfkjq".scrabble_score()).to eq 33
   end
+
+  it "returns the correct value for uppercase words" do
+    expect("LIZZIE".scrabble_score()).to eq 24
+  end
+
 end

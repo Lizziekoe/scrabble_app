@@ -31,7 +31,7 @@ class String
 
     # Calculates score from input word.
 
-    split_word = self.split("")
+    split_word = self.downcase().split("")
     score = 0
     split_word.each() do |letter|
       score = score + letter_scores.fetch(letter)
