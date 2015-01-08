@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Scrabble Calculator</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-  </head>
-  <body>
-    <div class="container">
-      <%= yield %>
+<head>
+  <title>Scrabble Calculator</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <div class="container" id="bottom">
+    <div class="jumbotron" >
+      <h1>Scrabble Calculator</h1>
+      <hr>
+    <%= yield %>
     </div>
-  </body>
+  </div>
+</body>
 </html>

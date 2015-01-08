@@ -9,5 +9,6 @@ end
 
 get("/results") do
   @score = params.fetch("input_word").scrabble_score()
+  @word = params.fetch("input_word")
   erb(:results)
 end
